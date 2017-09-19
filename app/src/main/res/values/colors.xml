@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="myGray_f4">#f4f4f4</color>
+    <color name="myGray_f2">#F2F2F2</color>
+    <color name="myGray_fA">#FAFAFA</color>
+    <color name="myWhite">#FFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tabsScrollColor">#004D40</color>
+    <color name="myDarkGreen">#004D40</color>
+    <color name="myDarkGreenTransparent">#80004D40</color>
+    <color name="myGreen">#00695C</color>
+    <color name="myDark20">#202020</color>
+    <color name="myLightGreen">#00796B</color>
+    <color name="myLightGreenTransparent">#8000796B</color>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yft.admin.myapplication.CreateCustomTraining"
+    tools:showIn="@layout/activity_create_custom_training">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/myWhite"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_custom_training_top"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyCardViewStyleCustomTraining">
+
+            <EditText
+                android:id="@+id/create_custom_training_exercise_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:focusable="false"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Training name" />
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/create_custom_training_LV"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/create_custom_training_exercise_name">
+
+            <com.yft.admin.myapplication.classes.DynamicListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/create_custom_training_drop_it_here"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/border2"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView3"
+                    android:paddingTop="10dp"
+                    android:text="DROP              IT" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5dp"
+                    android:text="HERE"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_custom_training_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MyCardViewStyleCustomTraining">
+
+            <LinearLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/create_custom_training_adding_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/create_custom_training_submit"
+                    android:layout_margin="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/normal_border"
+                    android:text="SUBMIT" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
